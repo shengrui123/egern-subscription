@@ -1,0 +1,737 @@
+---
+proxies:
+- vmess:
+    name: "0.1X \U0001F1FA\U0001F1F8 美国2"
+    server: japan.ysqhq.top
+    port: 21996
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.2X \U0001F1FA\U0001F1F8 美国3"
+    server: japan.ysqhq.top
+    port: 21995
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1FA\U0001F1F8 美国4"
+    server: asia.ysqhq.top
+    port: 22000
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.1X \U0001F1FA\U0001F1F8 美国8"
+    server: japan.ysqhq.top
+    port: 21870
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1FA\U0001F1F8 美国9"
+    server: japan.ysqhq.top
+    port: 21871
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1FA\U0001F1F8 美国10"
+    server: japan.ysqhq.top
+    port: 21872
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.1X \U0001F1FA\U0001F1F8 美国23"
+    server: japan.ysqhq.top
+    port: 21998
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1FA\U0001F1F8 美国16"
+    server: japan.ysqhq.top
+    port: 21944
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1FA\U0001F1F8 美国17"
+    server: japan.ysqhq.top
+    port: 21945
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1E8\U0001F1E6 加拿大3"
+    server: japan.ysqhq.top
+    port: 22021
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1E6\U0001F1EC 安提瓜和巴布达"
+    server: asia.ysqhq.top
+    port: 22149
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1E8\U0001F1F7 哥斯达黎加"
+    server: japan.ysqhq.top
+    port: 22024
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.2X \U0001F1F2\U0001F1FD 墨西哥"
+    server: japan.ysqhq.top
+    port: 22025
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.2X \U0001F1E8\U0001F1F4 哥伦比亚"
+    server: japan.ysqhq.top
+    port: 22164
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F5\U0001F1E6 巴拿马"
+    server: japan.ysqhq.top
+    port: 22028
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1EA\U0001F1E8 厄瓜多尔"
+    server: japan.ysqhq.top
+    port: 22170
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F5\U0001F1EA 秘鲁"
+    server: japan.ysqhq.top
+    port: 22171
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3X \U0001F1E7\U0001F1F7 巴西"
+    server: japan.ysqhq.top
+    port: 22022
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1E6\U0001F1F7 阿根廷"
+    server: japan.ysqhq.top
+    port: 22026
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1E6\U0001F1F6 南极"
+    server: asia.ysqhq.top
+    port: 21932
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1EB\U0001F1EE 芬兰"
+    server: eur.ysqhq.top
+    port: 22062
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1E8\U0001F1ED 瑞士"
+    server: eur.ysqhq.top
+    port: 22063
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F8\U0001F1F2 圣马力诺"
+    server: asia.ysqhq.top
+    port: 21943
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F8\U0001F1EA 瑞典2"
+    server: eur.ysqhq.top
+    port: 21933
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.2X \U0001F1EC\U0001F1E7 英国2"
+    server: eur.ysqhq.top
+    port: 21419
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.5X \U0001F1EE\U0001F1EA 爱尔兰岛"
+    server: eur.ysqhq.top
+    port: 22034
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1E9\U0001F1F0 丹麦"
+    server: eur.ysqhq.top
+    port: 22058
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1E9\U0001F1EA 德国"
+    server: eur.ysqhq.top
+    port: 21954
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1F3\U0001F1F1 荷兰 2"
+    server: eur.ysqhq.top
+    port: 21431
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1EE\U0001F1F9 意大利 家宽"
+    server: eur.ysqhq.top
+    port: 22027
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1EA\U0001F1F8 西班牙"
+    server: eur.ysqhq.top
+    port: 22037
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1EC\U0001F1EE 直布罗陀"
+    server: asia.ysqhq.top
+    port: 22030
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1EB\U0001F1F7 法国 1"
+    server: eur.ysqhq.top
+    port: 21418
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F1\U0001F1FA 卢森堡"
+    server: eur.ysqhq.top
+    port: 22029
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1F5\U0001F1F9 葡萄牙"
+    server: eur.ysqhq.top
+    port: 22039
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1EC\U0001F1F7 希腊"
+    server: eur.ysqhq.top
+    port: 22040
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1E6\U0001F1F9 奥地利"
+    server: eur.ysqhq.top
+    port: 22041
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1F7\U0001F1F4 罗马尼亚"
+    server: eur.ysqhq.top
+    port: 22042
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1EB\U0001F1F4 法罗群岛"
+    server: asia.ysqhq.top
+    port: 21425
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1ED\U0001F1F7 克罗地亚"
+    server: eur.ysqhq.top
+    port: 22044
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1F2\U0001F1F0 北马其顿"
+    server: eur.ysqhq.top
+    port: 22046
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1F8\U0001F1EE 斯洛文尼亚"
+    server: eur.ysqhq.top
+    port: 22048
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1F7\U0001F1F8 塞尔维亚"
+    server: eur.ysqhq.top
+    port: 22049
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1E8\U0001F1FF 捷克"
+    server: eur.ysqhq.top
+    port: 22051
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1ED\U0001F1FA 匈牙利"
+    server: eur.ysqhq.top
+    port: 22053
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F1\U0001F1F9 立陶宛"
+    server: eur.ysqhq.top
+    port: 22056
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1EE\U0001F1F1 以色列1"
+    server: eur.ysqhq.top
+    port: 22059
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1EE\U0001F1F1 以色列2"
+    server: eur.ysqhq.top
+    port: 22060
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.7X \U0001F1F9\U0001F1F7 土耳其"
+    server: eur.ysqhq.top
+    port: 23155
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F2\U0001F1E9 摩尔多瓦"
+    server: eur.ysqhq.top
+    port: 22071
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F5\U0001F1F1 波兰"
+    server: eur.ysqhq.top
+    port: 22152
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.2X \U0001F1EA\U0001F1EA 爱沙尼亚"
+    server: eur.ysqhq.top
+    port: 22072
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.2X \U0001F1F0\U0001F1EC 吉尔吉斯斯坦"
+    server: eur.ysqhq.top
+    port: 22151
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1FA\U0001F1FF 乌兹别克斯坦"
+    server: asia.ysqhq.top
+    port: 22167
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.2X \U0001F1F7\U0001F1FA 俄罗斯"
+    server: eur.ysqhq.top
+    port: 22077
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1FF\U0001F1FC 津巴布韦"
+    server: asia.ysqhq.top
+    port: 22079
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1FA\U0001F1E6 乌克兰2"
+    server: eur.ysqhq.top
+    port: 21432
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "5.0X \U0001F1EC\U0001F1F6 赤道几内亚"
+    server: asia.ysqhq.top
+    port: 22149
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F8\U0001F1E6 沙特阿拉伯"
+    server: eur.ysqhq.top
+    port: 22086
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.7X \U0001F1F6\U0001F1E6 卡塔尔"
+    server: asia.ysqhq.top
+    port: 21963
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F2\U0001F1F1 马里"
+    server: asia.ysqhq.top
+    port: 22087
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1E7\U0001F1ED 巴林"
+    server: eur.ysqhq.top
+    port: 22088
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1FF\U0001F1E6 南非"
+    server: eur.ysqhq.top
+    port: 21424
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.6X \U0001F1F3\U0001F1EC 尼日利亚"
+    server: eur.ysqhq.top
+    port: 22082
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F3\U0001F1EC 尼日利亚2"
+    server: eur.ysqhq.top
+    port: 22163
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F9\U0001F1F3 突尼斯"
+    server: asia.ysqhq.top
+    port: 22083
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1EA\U0001F1EC 埃及"
+    server: eur.ysqhq.top
+    port: 22084
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F5\U0001F1ED 菲律宾"
+    server: asia.ysqhq.top
+    port: 21936
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1E6\U0001F1F2 亚美尼亚"
+    server: eur.ysqhq.top
+    port: 22169
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: 1.0X 越南2 VNTP 家宽
+    server: asia.ysqhq.top
+    port: 22089
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F9\U0001F1ED 泰国1"
+    server: asia.ysqhq.top
+    port: 22091
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: 1.0X 柬埔寨
+    server: asia.ysqhq.top
+    port: 39739
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.7X \U0001F1F2\U0001F1F2 缅甸"
+    server: asia.ysqhq.top
+    port: 21977
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1E7\U0001F1E9 孟加拉国"
+    server: asia.ysqhq.top
+    port: 22094
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.7X \U0001F1F1\U0001F1E6 老挝"
+    server: asia.ysqhq.top
+    port: 21978
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.5X \U0001F1F2\U0001F1FE 马来西亚"
+    server: asia.ysqhq.top
+    port: 22096
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1EE\U0001F1E9 印度尼西亚2"
+    server: asia.ysqhq.top
+    port: 20005
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1EE\U0001F1F3 印度"
+    server: asia.ysqhq.top
+    port: 21950
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F9\U0001F1F1 东帝汶"
+    server: asia.ysqhq.top
+    port: 22104
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F8\U0001F1E7 所罗门群岛"
+    server: asia.ysqhq.top
+    port: 22105
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F8\U0001F1EC 新加坡1"
+    server: asia.ysqhq.top
+    port: 22102
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F8\U0001F1EC 新加坡2"
+    server: asia.ysqhq.top
+    port: 21949
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F8\U0001F1EC 新加坡3"
+    server: asia.ysqhq.top
+    port: 22165
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1E6\U0001F1FA 澳大利亚3"
+    server: asia.ysqhq.top
+    port: 21990
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F0\U0001F1F7 韩国1"
+    server: japan.ysqhq.top
+    port: 22113
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1EF\U0001F1F5 日本0 NTT家宽"
+    server: japan.ysqhq.top
+    port: 22116
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1EF\U0001F1F5 日本1"
+    server: japan.ysqhq.top
+    port: 22117
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1EF\U0001F1F5 日本3"
+    server: japan.ysqhq.top
+    port: 22123
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.8X \U0001F1EF\U0001F1F5 日本4"
+    server: japan.ysqhq.top
+    port: 22124
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1F2\U0001F1F4 澳门 1"
+    server: asia.ysqhq.top
+    port: 22156
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1F2\U0001F1F4 澳门 2"
+    server: asia.ysqhq.top
+    port: 22161
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1F9\U0001F1FC 台湾1"
+    server: asia.ysqhq.top
+    port: 21937
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1F9\U0001F1FC 台湾2"
+    server: asia.ysqhq.top
+    port: 21935
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1F9\U0001F1FC 台湾3 家宽"
+    server: asia.ysqhq.top
+    port: 21865
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1ED\U0001F1F0 香港0"
+    server: asia.ysqhq.top
+    port: 22147
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1ED\U0001F1F0 香港1"
+    server: asia.ysqhq.top
+    port: 22130
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1ED\U0001F1F0 香港2"
+    server: asia.ysqhq.top
+    port: 22131
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "3.0X \U0001F1ED\U0001F1F0 香港6"
+    server: asia.ysqhq.top
+    port: 22132
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.0X \U0001F1ED\U0001F1F0 香港7"
+    server: asia.ysqhq.top
+    port: 22133
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "2.0X \U0001F1ED\U0001F1F0 香港8 HKT"
+    server: asia.ysqhq.top
+    port: 22134
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.5X \U0001F1ED\U0001F1F0 香港9"
+    server: asia.ysqhq.top
+    port: 22135
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "1.5X \U0001F1ED\U0001F1F0 香港10 HGC 家宽"
+    server: asia.ysqhq.top
+    port: 21864
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.7X \U0001F1ED\U0001F1F0 香港14"
+    server: asia.ysqhq.top
+    port: 22137
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "0.1X \U0001F1ED\U0001F1F0 香港14 PornEmby专用"
+    server: asia.ysqhq.top
+    port: 21866
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
+- vmess:
+    name: "5.0X \U0001F1FA\U0001F1F3 随机国家家宽"
+    server: asia.ysqhq.top
+    port: 22140
+    user_id: 970939ae-2c84-4dcb-8b77-78203c13dd7d
+    security: auto
+    udp_relay: true
