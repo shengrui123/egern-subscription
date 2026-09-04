@@ -1,5 +1,5 @@
-#!name = 抖音基础模式
-#!desc = 顶部仅保留“关注、推荐”，精简侧栏商业入口，保留基础观看功能
+#!name = 抖音 TikTok 基础模式
+#!desc = 顶部仅保留“关注、推荐”，精简侧栏商业入口，呈现接近 TikTok 的基础功能布局
 #!author = Codex
 #!homepage = https://github.com/shengrui123/egern-subscription
 #!system = iOS,iPadOS
@@ -12,7 +12,7 @@
 debug = switch,false,tag=调试日志,desc=记录识别及过滤结果
 
 [Script]
-response if ${url} ~= /^https:\/\/[^\/]+\.(?:snssdk|amemv)\.com\/aweme\/v1\/(?:homepage\/settings|[^?#]*(?:sidebar|side_bar|navigation|entrance|panel|settings?|config)[^?#]*)/i && ${response.status} == 200 then script("https://raw.githubusercontent.com/shengrui123/egern-subscription/main/DouyinHomeTabs.js", {${debug}}) with tag="抖音基础模式", timeout=20, requires_body=true
+response if ${url} ~= /^https:\/\/[^\/]+\.(?:snssdk|amemv)\.com\/aweme\/v1\/(?:homepage\/settings|[^?#]*(?:sidebar|side_bar|navigation|entrance|panel|settings?|config)[^?#]*)/i && ${response.status} == 200 then script("https://raw.githubusercontent.com/shengrui123/egern-subscription/main/DouyinHomeTabs.js", {${debug}}) with tag="抖音 TikTok 基础模式", timeout=20, requires_body=true
 
 [Mitm]
 hostname = %APPEND% *.snssdk.com, *.amemv.com

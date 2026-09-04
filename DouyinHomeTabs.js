@@ -1,5 +1,5 @@
 /**
- * 抖音基础模式（Loon Response Script）
+ * 抖音 TikTok 基础模式（Loon Response Script）
  *
  * 1. 顶部频道只保留“关注、推荐”；
  * 2. 侧栏移除钱包、券包、团购等非基础入口；
@@ -95,7 +95,7 @@ let menuArrays = 0;
 let weatherFields = 0;
 
 function log(message) {
-  if (DEBUG) console.log(`[抖音基础模式] ${message}`);
+  if (DEBUG) console.log(`[抖音 TikTok 基础模式] ${message}`);
 }
 
 function normalizedValues(item) {
