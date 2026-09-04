@@ -1,0 +1,10 @@
+#!name = 抖音首页顶部精简
+#!desc = 首页顶部仅保留“关注”和“推荐”，隐藏钱包、团购、附近等非必要入口
+#!author = Codex
+#!date = 2026-09-04
+
+[Script]
+http-response ^https:\/\/[^\/]+\.(?:snssdk|amemv)\.com\/aweme\/v1\/homepage\/settings\/ script-path=https://raw.githubusercontent.com/shengrui123/egern-subscription/main/DouyinHomeTabs.js, requires-body=true, timeout=10, tag=抖音首页顶部精简
+
+[MITM]
+hostname = %APPEND% *.snssdk.com, *.amemv.com
