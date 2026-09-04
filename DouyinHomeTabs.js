@@ -1,84 +1,178 @@
 /**
- * 抖音首页顶部精简
- * 仅保留“关注”和“推荐”。
+ * 抖音基础模式（Loon Response Script）
+ *
+ * 1. 顶部频道只保留“关注、推荐”；
+ * 2. 侧栏移除钱包、券包、团购等非基础入口；
+ * 3. 仅修改已识别的导航数组，无法确认结构时保持原响应。
  */
 
-const FOLLOW_IDS = new Set([
-  "homepage_follow",
-  "follow",
-]);
+const DEBUG = $argument?.debug === true;
 
-const RECOMMEND_IDS = new Set([
+const FIELD_NAMES = [
+  "id",
+  "key",
+  "type",
+  "tab_id",
+  "tab_type",
+  "identifier",
+  "name",
+  "title",
+  "text",
+  "label",
+  "tab_name",
+];
+
+const FOLLOW_VALUES = new Set(["homepage_follow", "follow", "关注"]);
+const RECOMMEND_VALUES = new Set([
+  "homepage_hot_container",
   "homepage_hot",
   "homepage_recommend",
   "recommend",
   "hot",
+  "推荐",
 ]);
 
-function valuesOf(item) {
-  if (!item || typeof item !== "object") return [];
+const TOP_TAB_VALUES = new Set([
+  ...FOLLOW_VALUES,
+  ...RECOMMEND_VALUES,
+  "homepage_mall",
+  "homepage_nearby",
+  "homepage_groupon",
+  "homepage_tablive",
+  "homepage_pad_hot",
+  "homepage_hangout",
+  "homepage_familiar",
+  "homepage_playlet_stream",
+  "homepage_pad_cinema",
+  "homepage_pad_kids_v2",
+  "homepage_pad_game",
+  "homepage_mediumvideo",
+  "城",
+  "同城",
+  "精选",
+  "经验",
+  "直播",
+  "商城",
+  "团购",
+  "热点",
+  "朋友",
+  "短剧",
+  "看剧",
+  "少儿",
+  "游戏",
+]);
 
-  return [
-    item.id,
-    item.tab_id,
-    item.tab_type,
-    item.name,
-    item.title,
-    item.tab_name,
-    item.text,
-  ]
-    .filter((value) => value !== undefined && value !== null)
+const BASIC_MENU_VALUES = new Set([
+  "扫一扫",
+  "设置",
+  "观看历史",
+  "离线缓存",
+  "稍后再看",
+]);
+
+const EXTRA_MENU_VALUES = new Set([
+  "乘车码",
+  "我的钱包",
+  "钱包",
+  "券包",
+  "附近团购",
+  "我的转化记录",
+  "抖音创作者中心",
+  "抖音创作者…",
+  "直播广场",
+  "放映厅",
+  "使用管理助手",
+  "更多功能",
+]);
+
+const ALL_MENU_VALUES = new Set([
+  ...BASIC_MENU_VALUES,
+  ...EXTRA_MENU_VALUES,
+]);
+
+let topTabArrays = 0;
+let menuArrays = 0;
+let weatherFields = 0;
+
+function log(message) {
+  if (DEBUG) console.log(`[抖音基础模式] ${message}`);
+}
+
+function normalizedValues(item) {
+  if (!item || typeof item !== "object" || Array.isArray(item)) return [];
+
+  return FIELD_NAMES
+    .map((field) => item[field])
+    .filter((value) => typeof value === "string" || typeof value === "number")
     .map((value) => String(value).trim().toLowerCase());
 }
 
-function isFollow(item) {
-  return valuesOf(item).some(
-    (value) => FOLLOW_IDS.has(value) || value === "关注",
-  );
+function hasKnownValue(item, values) {
+  return normalizedValues(item).some((value) => values.has(value));
 }
 
-function isRecommend(item) {
-  return valuesOf(item).some(
-    (value) => RECOMMEND_IDS.has(value) || value === "推荐",
-  );
+function simplifyTopTabs(list) {
+  const knownCount = list.filter((item) => hasKnownValue(item, TOP_TAB_VALUES)).length;
+  const follow = list.find((item) => hasKnownValue(item, FOLLOW_VALUES));
+  const recommend = list.find((item) => hasKnownValue(item, RECOMMEND_VALUES));
+
+  // 至少识别出三个频道且“关注、推荐”均存在时才处理，避免误伤普通列表。
+  if (knownCount < 3 || !follow || !recommend) return list;
+
+  topTabArrays += 1;
+  return [follow, recommend];
 }
 
-function simplifyTabs(list) {
-  if (!Array.isArray(list)) return false;
+function simplifyMenu(list) {
+  const knownCount = list.filter((item) => hasKnownValue(item, ALL_MENU_VALUES)).length;
+  const basicCount = list.filter((item) => hasKnownValue(item, BASIC_MENU_VALUES)).length;
 
-  const follow = list.find(isFollow);
-  const recommend = list.find(isRecommend);
+  // 同时存在基础入口和多个已知入口时才视为侧栏菜单数组。
+  if (knownCount < 2 || basicCount < 1) return list;
 
-  // 仅当两个必要入口均被识别时才修改，避免接口变化导致导航为空。
-  if (!follow || !recommend) return false;
+  const filtered = list.filter((item) => !hasKnownValue(item, EXTRA_MENU_VALUES));
+  if (filtered.length === list.length) return list;
 
-  list.splice(0, list.length, follow, recommend);
-  return true;
+  menuArrays += 1;
+  return filtered;
+}
+
+function clean(value) {
+  if (Array.isArray(value)) {
+    const children = value.map(clean);
+    return simplifyMenu(simplifyTopTabs(children));
+  }
+
+  if (!value || typeof value !== "object") return value;
+
+  for (const key of Object.keys(value)) {
+    // 仅对命中的配置类接口移除服务端天气配置；原生天气视图不受此项控制。
+    if (/^(?:weather|weather_info|weather_entry|weather_label)$/i.test(key)) {
+      delete value[key];
+      weatherFields += 1;
+      continue;
+    }
+
+    value[key] = clean(value[key]);
+  }
+
+  return value;
 }
 
 try {
-  const body = JSON.parse($response.body);
-  const candidates = [
-    body.data,
-    body.tabs,
-    body.tab_list,
-    body.homepage_tabs,
-    body.homepage_tab_list,
-    body.data?.data,
-    body.data?.tabs,
-    body.data?.tab_list,
-    body.data?.homepage_tabs,
-    body.data?.homepage_tab_list,
-  ];
-
-  const changed = candidates.some(simplifyTabs);
-
-  if (!changed) {
-    console.log("抖音首页精简：未识别到完整的关注/推荐入口，保持原响应");
+  if (typeof $response.body !== "string" || !$response.body) {
+    throw new Error("响应体为空或不是文本 JSON");
   }
 
-  $done({ body: JSON.stringify(body) });
+  const body = clean(JSON.parse($response.body));
+  const changed = topTabArrays + menuArrays + weatherFields > 0;
+
+  log(
+    `顶部数组=${topTabArrays}，侧栏数组=${menuArrays}，天气字段=${weatherFields}`,
+  );
+
+  $done(changed ? { body: JSON.stringify(body) } : {});
 } catch (error) {
-  console.log(`抖音首页精简失败：${error}`);
+  log(`保持原响应：${error.message || error}`);
   $done({});
 }
